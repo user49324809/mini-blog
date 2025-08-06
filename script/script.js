@@ -31,7 +31,7 @@ function renderPosts() {
     div.className = 'post';
     div.innerHTML = 
       `<div class="content">${post.content}</div>
-      <div class="tags">${post.tags.join(' ')}</div>
+      <div class="tags">${Array.isArray(post.tags) ? post.tags.join(' ') : ''}</div>
       <div class="date">${new Date(post.date).toLocaleString()}</div>
       <div class="actions">
         <button onclick="editPost(${index})">✏️</button>
