@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Мини-Блог</title>
+  <link rel="stylesheet" href="./style/style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>📝 Мини-Блог</h1>
+    <div class="controls">
+      <textarea id="post-content" placeholder="Напиши пост..."></textarea>
+      <div class="info">
+        <input type="text" id="post-tags" placeholder="#тег1 #тег2" />
+        <span id="char-count">0 символов</span>
+      </div>
+      <div class="buttons">
+        <button id="add-post">Добавить пост</button>
+        <button id="emoji-btn">😊</button>
+      </div>
+      <input type="text" id="search-tag" placeholder="🔍 Поиск по тегу (#тег)" />
+      <select id="sort">
+        <option value="newest">Сначала новые</option>
+        <option value="oldest">Сначала старые</option>
+      </select>
+    </div>
+    <div id="posts-container"></div>
+  </div>
+  <script src="./script/script.js"></script>
+</body>
+</html>
